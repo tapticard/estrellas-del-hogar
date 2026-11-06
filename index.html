@@ -586,7 +586,7 @@ function parentView(){
     '<input class="in" id="new-task-s" type="number" inputmode="numeric" min="1" max="99" value="1" aria-label="Estrellas de la nueva tarea">'+
     '<button class="btn sm" data-act="addtask">Agregar</button></div></section>';
 
-  out+='<section class="panel"><h3>Premios</h3><p class="hint" style="margin-top:0">La foto la ve el niño. El enlace de compra solo lo ves tú, cuando el niño canjea el premio. Al pegar un enlace, la app intenta traer la foto del producto con servicios externos (Microlink e images.weserv.nl), que solo reciben ese enlace.</p>'+
+  out+='<section class="panel"><h3>Premios</h3><p class="hint" style="margin-top:0">El enlace de compra solo lo pueden ver los papás, y solo ellos pueden autorizar la compra.</p>'+
     S.prizes.map(function(p){
       return '<div class="edit-card"><div class="erow" style="margin-top:0">'+
         '<input class="in" id="pn-'+esc(p.id)+'" data-f="pn" data-id="'+esc(p.id)+'" value="'+esc(p.n)+'" maxlength="60" aria-label="Nombre del premio">'+
